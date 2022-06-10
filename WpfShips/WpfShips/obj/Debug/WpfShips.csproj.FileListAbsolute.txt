@@ -1,0 +1,16 @@
+C:\Users\barto\source\repos\WpfShips\WpfShips\bin\Debug\WpfShips.exe.config
+C:\Users\barto\source\repos\WpfShips\WpfShips\bin\Debug\WpfShips.exe
+C:\Users\barto\source\repos\WpfShips\WpfShips\bin\Debug\WpfShips.pdb
+C:\Users\barto\source\repos\WpfShips\WpfShips\obj\Debug\WpfShips.csproj.AssemblyReference.cache
+C:\Users\barto\source\repos\WpfShips\WpfShips\obj\Debug\WpfShips.csproj.SuggestedBindingRedirects.cache
+C:\Users\barto\source\repos\WpfShips\WpfShips\obj\Debug\MainWindow.g.cs
+C:\Users\barto\source\repos\WpfShips\WpfShips\obj\Debug\App.g.cs
+C:\Users\barto\source\repos\WpfShips\WpfShips\obj\Debug\WpfShips_MarkupCompile.cache
+C:\Users\barto\source\repos\WpfShips\WpfShips\obj\Debug\WpfShips_MarkupCompile.lref
+C:\Users\barto\source\repos\WpfShips\WpfShips\obj\Debug\MainWindow.baml
+C:\Users\barto\source\repos\WpfShips\WpfShips\obj\Debug\WpfShips.g.resources
+C:\Users\barto\source\repos\WpfShips\WpfShips\obj\Debug\WpfShips.Properties.Resources.resources
+C:\Users\barto\source\repos\WpfShips\WpfShips\obj\Debug\WpfShips.csproj.GenerateResource.cache
+C:\Users\barto\source\repos\WpfShips\WpfShips\obj\Debug\WpfShips.csproj.CoreCompileInputs.cache
+C:\Users\barto\source\repos\WpfShips\WpfShips\obj\Debug\WpfShips.exe
+C:\Users\barto\source\repos\WpfShips\WpfShips\obj\Debug\WpfShips.pdb
