@@ -165,127 +165,42 @@ namespace WpfShips
         }
 
 
-        private void RandomQuadrupleShip()
+        internal bool PlayerShoot(Coords coords)
         {
-            int iterator = 1;
-            int x = rnd.Next(0, 8);
-            int y = rnd.Next(0, 8);
-            int XorY = rnd.Next(1, 3);
-            computerBoardCondition[y, x].Occupied = true;
-            computerBoardCondition[y, x].TypeOfShip = 4;
-            if (XorY == 1)
-            {
-                int left = x;
-                int right = x;
-                while (iterator < 4)
-                {
-                    if (right < 7)
-                    {
-                        right++;
-                        computerBoardCondition[y, right].Occupied = true;
-                        computerBoardCondition[y, right].TypeOfShip = 4;
-                        iterator++;
-                    }
-                    else
-                    {
-                        left--;
-                        computerBoardCondition[y, left].Occupied = true;
-                        computerBoardCondition[y, left].TypeOfShip = 4;
-                        iterator++;
-                    }
-                }
-            }
-            else if (XorY == 2)
-            {
-                int up = y;
-                int down = y;
-                while (iterator < 4)
-                {
-                    if (down < 7)
-                    {
-                        down++;
-                        computerBoardCondition[down, x].Occupied = true;
-                        computerBoardCondition[down, x].TypeOfShip = 4;
-                        iterator++;
-                    }
-                    else
-                    {
-                        up--;
-                        computerBoardCondition[up, x].Occupied = true;
-                        computerBoardCondition[up, x].TypeOfShip = 4;
-                        iterator++;
-                    }
-                }
-            }
-        }
 
-        internal void PlayerShoot(Coords coords)
-        {
             computerBoardCondition[coords.y, coords.x].Hit = true;
+            IsGameOver(computerBoardCondition);
+           if (computerBoardCondition[coords.y, coords.x].Occupied==true)
+                return true;
+            else 
+                return false;
+            
+
             // Check if game is over
             // Update game summary
         }
 
-        private void ComputerShoot()
+        internal void ComputerShoot()
         {
-            // todo implement me  
-        }
-
-        private void RandomTripleShip()
-        {
-            int iterator = 1;
+            
             int x = rnd.Next(0, 8);
             int y = rnd.Next(0, 8);
-            int XorY = rnd.Next(1, 3);
-            computerBoardCondition[y, x].Occupied = true;
-            computerBoardCondition[y, x].TypeOfShip = 3;
-            if (XorY == 1)
+            if (playerBoardCondition[y,x].Hit == true)
             {
-                int left = x;
-                int right = x;
-                while (iterator < 3)
-                {
-                    if (right < 7)
-                    {
-                        right++;
-                        computerBoardCondition[y, right].Occupied = true;
-                        computerBoardCondition[y, right].TypeOfShip = 3;
-                        iterator++;
-                    }
-                    else
-                    {
-                        left--;
-                        computerBoardCondition[y, left].Occupied = true;
-                        computerBoardCondition[y, left].TypeOfShip = 3;
-                        iterator++;
-                    }
-                }
+                ComputerShoot();
             }
-            else if (XorY == 2)
+            else if(playerBoardCondition[y, x].Occupied == true)
             {
-                int up = y;
-                int down = y;
-                while (iterator < 3)
-                {
-                    if (down < 7)
-                    {
-                        down++;
-                        computerBoardCondition[down, x].Occupied = true;
-                        computerBoardCondition[down, x].TypeOfShip = 3;
-                        iterator++;
-                    }
-                    else
-                    {
-                        up--;
-                        computerBoardCondition[up, x].Occupied = true;
-                        computerBoardCondition[up, x].TypeOfShip = 3;
-                        iterator++;
-                    }
-                }
-
-
+                playerBoardCondition[y,x].Hit = true;
+                ComputerShoot();
             }
+            else
+            {
+                playerBoardCondition[y, x].Hit = true;
+            }
+            // todo implement me
         }
+
         private void GenerateComputer()
         {
             RandomShip(4);
@@ -294,17 +209,17 @@ namespace WpfShips
             RandomShip(1);
         }
 
-        private bool IsGameOver(ButtonCondition[,] Array)
+        private void IsGameOver(ButtonCondition[,] Array)
         {
             for(int i = 0; i < 8; i++)
             {
                 for(int j = 0; j < 8; j++)
                 {
                     if (Array[i, j].Occupied == true && Array[i, j].Hit == false)
-                        return false;
+                        return;
                 }
             }
-            return true;
+            gameState = GameState.GAMEOVER;
         }
     }
 
@@ -324,7 +239,7 @@ namespace WpfShips
     }
 
     public enum GameState {
-        PICKING, PLAYING
+        PICKING, PLAYING, GAMEOVER
     }
 
 }

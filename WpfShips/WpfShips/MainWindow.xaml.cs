@@ -61,7 +61,7 @@ namespace WpfShips
 
         private void RenderPlayerButton(Button button, ButtonCondition condition, GameState gameState)
         {
-            button.IsEnabled = gameState == GameState.PICKING;
+            button.IsEnabled = true;
             button.Tag = null;
             button.BorderBrush = GetBorderBrush(condition);
             button.Foreground = foregroundByShipSize[condition.TypeOfShip];
@@ -104,16 +104,22 @@ namespace WpfShips
         {
             Button button = (Button)sender;
             var coords = ButtonToCoords(button);
-            if (game.gameState == GameState.PLAYING)
+            if (game.gameState == GameState.PLAYING && game.PlayerShoot(coords)==true )
             {
                 game.PlayerShoot(coords);
             }
-
-            renderGame(); 
+            else if (game.gameState == GameState.PLAYING)
+            {
+                game.PlayerShoot(coords);
+                game.ComputerShoot();
+            }
+            renderGame();
         }
 
         private void HandleShoot(Coords coords)
         {
+            game.PlayerShoot(coords);
+            game.ComputerShoot();
 
         }
 
@@ -125,6 +131,10 @@ namespace WpfShips
             Console.WriteLine($"Detected button click at x: {x}, y: {y}");
 
             return new Coords(x, y);
+        }
+        private void GameOverEvent()
+        {
+
         }
 
         private void ClickButtonRestart(object sender, RoutedEventArgs e)
