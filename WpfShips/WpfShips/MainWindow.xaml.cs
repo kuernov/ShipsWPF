@@ -109,7 +109,7 @@ namespace WpfShips
                 game.PlayerShoot(coords);
             }
 
-            renderGame();
+            renderGame(); 
         }
 
         private void HandleShoot(Coords coords)

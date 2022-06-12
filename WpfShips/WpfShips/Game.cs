@@ -228,7 +228,7 @@ namespace WpfShips
 
         private void ComputerShoot()
         {
-            // todo implement me
+            // todo implement me  
         }
 
         private void RandomTripleShip()
