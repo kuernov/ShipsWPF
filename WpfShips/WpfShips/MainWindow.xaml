@@ -80,70 +80,70 @@
         <Label Content="Player" HorizontalAlignment="Center" Height="42"  VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center" FontSize="20"/>
         <Label Grid.Column="1" Content="Computer" HorizontalAlignment="Center" Height="42" VerticalAlignment="Top" Width="99" FontSize="20"/>
         <Grid Grid.Column="1" HorizontalAlignment="center" Height="275" VerticalAlignment="center" Width="275">
-            <Button x:Name="A1c" Content="A1" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="B1c" Content="B1" HorizontalAlignment="Left" Height="30" Margin="35,0,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="C1c" Content="C1" HorizontalAlignment="Left" Height="30" Margin="70,0,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="D1c" Content="D1" HorizontalAlignment="Left" Height="30" Margin="105,0,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="E1c" Content="E1" HorizontalAlignment="Left" Height="30" Margin="140,0,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="F1c" Content="F1" HorizontalAlignment="Left" Height="30" Margin="175,0,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="G1c" Content="G1" HorizontalAlignment="Left" Height="30" Margin="210,0,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="H1c" Content="H1" HorizontalAlignment="Left" Height="30" Margin="245,0,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="A2c" Content="A2" HorizontalAlignment="Left" Height="30" Margin="0,35,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="B2c" Content="B2" HorizontalAlignment="Left" Height="30" Margin="35,35,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="C2c" Content="C2" HorizontalAlignment="Left" Height="30" Margin="70,35,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="D2c" Content="D2" HorizontalAlignment="Left" Height="30" Margin="105,35,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="E2c" Content="E2" HorizontalAlignment="Left" Height="30" Margin="140,35,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="F2c" Content="F2" HorizontalAlignment="Left" Height="30" Margin="175,35,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="G2c" Content="G2" HorizontalAlignment="Left" Height="30" Margin="210,35,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="H2c" Content="H2" HorizontalAlignment="Left" Height="30" Margin="245,35,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="A3c" Content="A3" HorizontalAlignment="Left" Height="30" Margin="0,70,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="B3c" Content="B3" HorizontalAlignment="Left" Height="30" Margin="35,70,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="C3c" Content="C3" HorizontalAlignment="Left" Height="30" Margin="70,70,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="D3c" Content="D3" HorizontalAlignment="Left" Height="30" Margin="105,70,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="E3c" Content="E3" HorizontalAlignment="Left" Height="30" Margin="140,70,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="F3c" Content="F3" HorizontalAlignment="Left" Height="30" Margin="175,70,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="G3c" Content="G3" HorizontalAlignment="Left" Height="30" Margin="210,70,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="H3c" Content="H3" HorizontalAlignment="Left" Height="30" Margin="245,70,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="A4c" Content="A4" HorizontalAlignment="Left" Height="30" Margin="0,105,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="B4c" Content="B4" HorizontalAlignment="Left" Height="30" Margin="35,105,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="C4c" Content="C4" HorizontalAlignment="Left" Height="30" Margin="70,105,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="D4c" Content="D4" HorizontalAlignment="Left" Height="30" Margin="105,105,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="E4c" Content="E4" HorizontalAlignment="Left" Height="30" Margin="140,105,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="F4c" Content="F4" HorizontalAlignment="Left" Height="30" Margin="175,105,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="G4c" Content="G4" HorizontalAlignment="Left" Height="30" Margin="210,105,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="H4c" Content="H4" HorizontalAlignment="Left" Height="30" Margin="245,105,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="A5c" Content="A5" HorizontalAlignment="Left" Height="30" Margin="0,140,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="B5c" Content="B5" HorizontalAlignment="Left" Height="30" Margin="35,140,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="C5c" Content="C5" HorizontalAlignment="Left" Height="30" Margin="70,140,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="D5c" Content="D5" HorizontalAlignment="Left" Height="30" Margin="105,140,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="E5c" Content="E5" HorizontalAlignment="Left" Height="30" Margin="140,140,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="F5c" Content="F5" HorizontalAlignment="Left" Height="30" Margin="175,140,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="G5c" Content="G5" HorizontalAlignment="Left" Height="30" Margin="210,140,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="H5c" Content="H5" HorizontalAlignment="Left" Height="30" Margin="245,140,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="A6c" Content="A6" HorizontalAlignment="Left" Height="30" Margin="0,175,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="B6c" Content="B6" HorizontalAlignment="Left" Height="30" Margin="35,175,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="C6c" Content="C6" HorizontalAlignment="Left" Height="30" Margin="70,175,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="D6c" Content="D6" HorizontalAlignment="Left" Height="30" Margin="105,175,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="E6c" Content="E6" HorizontalAlignment="Left" Height="30" Margin="140,175,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="F6c" Content="F6" HorizontalAlignment="Left" Height="30" Margin="175,175,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="G6c" Content="G6" HorizontalAlignment="Left" Height="30" Margin="210,175,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="H6c" Content="H6" HorizontalAlignment="Left" Height="30" Margin="245,175,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="A7c" Content="A7" HorizontalAlignment="Left" Height="30" Margin="0,210,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="B7c" Content="B7" HorizontalAlignment="Left" Height="30" Margin="35,210,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="C7c" Content="C7" HorizontalAlignment="Left" Height="30" Margin="70,210,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="D7c" Content="D7" HorizontalAlignment="Left" Height="30" Margin="105,210,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="E7c" Content="E7" HorizontalAlignment="Left" Height="30" Margin="140,210,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="F7c" Content="F7" HorizontalAlignment="Left" Height="30" Margin="175,210,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="G7c" Content="G7" HorizontalAlignment="Left" Height="30" Margin="210,210,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="H7c" Content="H7" HorizontalAlignment="Left" Height="30" Margin="245,210,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="A8c" Content="A8" HorizontalAlignment="Left" Height="30" Margin="0,245,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="B8c" Content="B8" HorizontalAlignment="Left" Height="30" Margin="35,245,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="C8c" Content="C8" HorizontalAlignment="Left" Height="30" Margin="70,245,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="D8c" Content="D8" HorizontalAlignment="Left" Height="30" Margin="105,245,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="E8c" Content="E8" HorizontalAlignment="Left" Height="30" Margin="140,245,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="F8c" Content="F8" HorizontalAlignment="Left" Height="30" Margin="175,245,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="G8c" Content="G8" HorizontalAlignment="Left" Height="30" Margin="210,245,0,0" VerticalAlignment="Top" Width="30"/>
-            <Button x:Name="H8c" Content="H8" HorizontalAlignment="Left" Height="30" Margin="245,245,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="A1c" Content="A1" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="B1c" Content="B1" HorizontalAlignment="Left" Height="30" Margin="35,0,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="C1c" Content="C1" HorizontalAlignment="Left" Height="30" Margin="70,0,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="D1c" Content="D1" HorizontalAlignment="Left" Height="30" Margin="105,0,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="E1c" Content="E1" HorizontalAlignment="Left" Height="30" Margin="140,0,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="F1c" Content="F1" HorizontalAlignment="Left" Height="30" Margin="175,0,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="G1c" Content="G1" HorizontalAlignment="Left" Height="30" Margin="210,0,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="H1c" Content="H1" HorizontalAlignment="Left" Height="30" Margin="245,0,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="A2c" Content="A2" HorizontalAlignment="Left" Height="30" Margin="0,35,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="B2c" Content="B2" HorizontalAlignment="Left" Height="30" Margin="35,35,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="C2c" Content="C2" HorizontalAlignment="Left" Height="30" Margin="70,35,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="D2c" Content="D2" HorizontalAlignment="Left" Height="30" Margin="105,35,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="E2c" Content="E2" HorizontalAlignment="Left" Height="30" Margin="140,35,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="F2c" Content="F2" HorizontalAlignment="Left" Height="30" Margin="175,35,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="G2c" Content="G2" HorizontalAlignment="Left" Height="30" Margin="210,35,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="H2c" Content="H2" HorizontalAlignment="Left" Height="30" Margin="245,35,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="A3c" Content="A3" HorizontalAlignment="Left" Height="30" Margin="0,70,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="B3c" Content="B3" HorizontalAlignment="Left" Height="30" Margin="35,70,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="C3c" Content="C3" HorizontalAlignment="Left" Height="30" Margin="70,70,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="D3c" Content="D3" HorizontalAlignment="Left" Height="30" Margin="105,70,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="E3c" Content="E3" HorizontalAlignment="Left" Height="30" Margin="140,70,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="F3c" Content="F3" HorizontalAlignment="Left" Height="30" Margin="175,70,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="G3c" Content="G3" HorizontalAlignment="Left" Height="30" Margin="210,70,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="H3c" Content="H3" HorizontalAlignment="Left" Height="30" Margin="245,70,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="A4c" Content="A4" HorizontalAlignment="Left" Height="30" Margin="0,105,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="B4c" Content="B4" HorizontalAlignment="Left" Height="30" Margin="35,105,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="C4c" Content="C4" HorizontalAlignment="Left" Height="30" Margin="70,105,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="D4c" Content="D4" HorizontalAlignment="Left" Height="30" Margin="105,105,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="E4c" Content="E4" HorizontalAlignment="Left" Height="30" Margin="140,105,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="F4c" Content="F4" HorizontalAlignment="Left" Height="30" Margin="175,105,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="G4c" Content="G4" HorizontalAlignment="Left" Height="30" Margin="210,105,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="H4c" Content="H4" HorizontalAlignment="Left" Height="30" Margin="245,105,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="A5c" Content="A5" HorizontalAlignment="Left" Height="30" Margin="0,140,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="B5c" Content="B5" HorizontalAlignment="Left" Height="30" Margin="35,140,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="C5c" Content="C5" HorizontalAlignment="Left" Height="30" Margin="70,140,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="D5c" Content="D5" HorizontalAlignment="Left" Height="30" Margin="105,140,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="E5c" Content="E5" HorizontalAlignment="Left" Height="30" Margin="140,140,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="F5c" Content="F5" HorizontalAlignment="Left" Height="30" Margin="175,140,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="G5c" Content="G5" HorizontalAlignment="Left" Height="30" Margin="210,140,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="H5c" Content="H5" HorizontalAlignment="Left" Height="30" Margin="245,140,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="A6c" Content="A6" HorizontalAlignment="Left" Height="30" Margin="0,175,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="B6c" Content="B6" HorizontalAlignment="Left" Height="30" Margin="35,175,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="C6c" Content="C6" HorizontalAlignment="Left" Height="30" Margin="70,175,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="D6c" Content="D6" HorizontalAlignment="Left" Height="30" Margin="105,175,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="E6c" Content="E6" HorizontalAlignment="Left" Height="30" Margin="140,175,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="F6c" Content="F6" HorizontalAlignment="Left" Height="30" Margin="175,175,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="G6c" Content="G6" HorizontalAlignment="Left" Height="30" Margin="210,175,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="H6c" Content="H6" HorizontalAlignment="Left" Height="30" Margin="245,175,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="A7c" Content="A7" HorizontalAlignment="Left" Height="30" Margin="0,210,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="B7c" Content="B7" HorizontalAlignment="Left" Height="30" Margin="35,210,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="C7c" Content="C7" HorizontalAlignment="Left" Height="30" Margin="70,210,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="D7c" Content="D7" HorizontalAlignment="Left" Height="30" Margin="105,210,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="E7c" Content="E7" HorizontalAlignment="Left" Height="30" Margin="140,210,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="F7c" Content="F7" HorizontalAlignment="Left" Height="30" Margin="175,210,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="G7c" Content="G7" HorizontalAlignment="Left" Height="30" Margin="210,210,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="H7c" Content="H7" HorizontalAlignment="Left" Height="30" Margin="245,210,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="A8c" Content="A8" HorizontalAlignment="Left" Height="30" Margin="0,245,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="B8c" Content="B8" HorizontalAlignment="Left" Height="30" Margin="35,245,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="C8c" Content="C8" HorizontalAlignment="Left" Height="30" Margin="70,245,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="D8c" Content="D8" HorizontalAlignment="Left" Height="30" Margin="105,245,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="E8c" Content="E8" HorizontalAlignment="Left" Height="30" Margin="140,245,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="F8c" Content="F8" HorizontalAlignment="Left" Height="30" Margin="175,245,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="G8c" Content="G8" HorizontalAlignment="Left" Height="30" Margin="210,245,0,0" VerticalAlignment="Top" Width="30"/>
+            <Button Click="HandlePlayerShoot" x:Name="H8c" Content="H8" HorizontalAlignment="Left" Height="30" Margin="245,245,0,0" VerticalAlignment="Top" Width="30"/>
         </Grid>
         <Rectangle Fill="Orange" HorizontalAlignment="Left" Height="16" Margin="112,409,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
         <Rectangle Fill="Orange"  HorizontalAlignment="Left" Height="16" Margin="128,409,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
