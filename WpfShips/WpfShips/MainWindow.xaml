@@ -149,11 +149,11 @@
         <Rectangle Fill="Orange"  HorizontalAlignment="Left" Height="16" Margin="128,409,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
         <Rectangle Fill="Orange"  HorizontalAlignment="Left" Height="16" Margin="144,409,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
         <Rectangle Fill="Orange"  HorizontalAlignment="Left" Height="16" Margin="160,409,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
-        <Rectangle Fill="Green"  HorizontalAlignment="Left" Height="16" Margin="112,430,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
-        <Rectangle Fill="Green" HorizontalAlignment="Left" Height="16" Margin="128,430,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
-        <Rectangle Fill="Green" HorizontalAlignment="Left" Height="16" Margin="144,430,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
+        <Rectangle Fill="aqua"  HorizontalAlignment="Left" Height="16" Margin="112,430,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
+        <Rectangle Fill="aqua" HorizontalAlignment="Left" Height="16" Margin="128,430,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
+        <Rectangle Fill="aqua" HorizontalAlignment="Left" Height="16" Margin="144,430,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
         <Rectangle Fill="red" HorizontalAlignment="Left" Height="16" Margin="112,451,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
-        <Rectangle Fill="Purple" HorizontalAlignment="Left" Height="16" Margin="112,472,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
+        <Rectangle Fill="lime" HorizontalAlignment="Left" Height="16" Margin="112,472,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
         <Rectangle Fill="Red" HorizontalAlignment="Left" Height="16" Margin="128,451,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
         <Rectangle HorizontalAlignment="Left" Height="16" Margin="112,409,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Grid.Column="1"/>
         <Rectangle HorizontalAlignment="Left" Height="16" Margin="128,409,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Grid.Column="1"/>
@@ -165,15 +165,16 @@
         <Rectangle HorizontalAlignment="Left" Height="16" Margin="112,451,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Grid.Column="1"/>
         <Rectangle HorizontalAlignment="Left" Height="16" Margin="112,472,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Grid.Column="1"/>
         <Rectangle HorizontalAlignment="Left" Height="16" Margin="128,451,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Height="16" Margin="194,409,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="16"/>
-        <TextBlock HorizontalAlignment="Left" Height="16" Margin="194,430,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="16"/>
-        <TextBlock HorizontalAlignment="Left" Height="16" Margin="194,451,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="16"/>
-        <TextBlock HorizontalAlignment="Left" Height="16" Margin="194,472,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="16"/>
-        <TextBlock HorizontalAlignment="Left" Height="16" Margin="194,409,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="16" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Height="16" Margin="194,430,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="16" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Height="16" Margin="194,451,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="16" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Height="16" Margin="194,472,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="16" Grid.Column="1"/>
-        <Button Content="Restart" HorizontalAlignment="Left" Height="26" Margin="31,29,0,0" VerticalAlignment="Top" Width="57" Click="ClickButtonRestart"/>
+        <Label Content="1" x:Name="pppp" HorizontalAlignment="Left" Height="22" Margin="194,406,0,0" VerticalAlignment="Top" Width="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="1" x:Name="ppp" HorizontalAlignment="Left" Height="24" Margin="194,426,0,0" VerticalAlignment="Top" Width="23" HorizontalContentAlignment="Center"/>
+        <Label Content="1" x:Name="pp" HorizontalAlignment="Left" Height="22" Margin="194,448,0,0" VerticalAlignment="Top" Width="23" HorizontalContentAlignment="Center"/>
+        <Label Content="1" x:Name="p" HorizontalAlignment="Left" Height="24" Margin="194,468,0,0" VerticalAlignment="Top" Width="23" HorizontalContentAlignment="Center"/>
+        <Label Content="1" x:Name="cccc" HorizontalAlignment="Left" Height="23" Margin="194,402,0,0" VerticalAlignment="Top" Width="23" Grid.Column="1" HorizontalContentAlignment="Center"/>
+        <Label Content="1" x:Name="ccc" HorizontalAlignment="Left" Height="23" Margin="194,426,0,0" VerticalAlignment="Top" Width="23" Grid.Column="1" HorizontalContentAlignment="Center"/>
+        <Label Content="1" x:Name="cc" HorizontalAlignment="Left" Height="23" Margin="194,447,0,0" VerticalAlignment="Top" Width="23" Grid.Column="1" HorizontalContentAlignment="Center"/>
+        <Label Content="1" x:Name="c" HorizontalAlignment="Left" Height="23" Margin="194,468,0,0" VerticalAlignment="Top" Width="23" Grid.Column="1" HorizontalContentAlignment="Center"/>
+        <Button Content="Restart" HorizontalAlignment="Left" Height="20" Margin="31,29,0,0" VerticalAlignment="Top" Width="57" Click="ClickButtonRestart"/>
         <Label x:Name="txtstate" Content="Picking" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="42" Margin="418,0,0,0" VerticalAlignment="Top" Width="169" HorizontalContentAlignment="Center" FontWeight="Bold" BorderBrush="#FFFF0404" BorderThickness="2,2,2,2" FontSize="22"/>
+        <Label Content="X - Hit&#xD;&#xA;O - Missed" HorizontalAlignment="Left" Height="50" Margin="300,417,0,0" VerticalAlignment="Top" Width="88" BorderThickness="1,1,1,1" BorderBrush="Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
     </Grid>
 </Window>

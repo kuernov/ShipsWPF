@@ -165,7 +165,6 @@ namespace WpfShips
         {
 
             computerBoardCondition[coords.y, coords.x].Hit = true;
-        
             IsGameOver(computerBoardCondition);
             if (computerBoardCondition[coords.y, coords.x].Occupied == true)
                 return true;
@@ -197,6 +196,7 @@ namespace WpfShips
                 playerBoardCondition[y, x].Hit = true;
                 Console.WriteLine($"Computer attacked x: {x}, y: {y}");
             }
+
             // todo implement me
         }
 
@@ -220,6 +220,44 @@ namespace WpfShips
             }
             gameState = GameState.GAMEOVER;
         }
+        public bool IsDestroyedPlayer(int n)
+        {
+            int iterator = 0;
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (playerBoardCondition[i, j].Hit == true && playerBoardCondition[i, j].Occupied == true && playerBoardCondition[i, j].TypeOfShip == n)
+                    {
+                        iterator++;
+                    }
+                }
+            }
+            if (iterator == n)
+            {
+                return true;
+            }
+            else return false;
+        }
+        public bool IsDestroyedComputer(int n)
+        {
+            int iterator = 0;
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (computerBoardCondition[i, j].Hit == true && computerBoardCondition[i, j].Occupied == true && computerBoardCondition[i,j].TypeOfShip==n)
+                    {
+                        iterator++;
+                    }
+                }
+            }
+            if (iterator == n)
+            {
+                return true;
+            }
+            else return false;
+        }
     }
 
 
@@ -235,7 +273,9 @@ namespace WpfShips
             Hit = false;
             TypeOfShip = 0;
         }
+      
     }
+
 
     public enum GameState
     {
