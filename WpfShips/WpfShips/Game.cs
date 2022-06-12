@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WpfShips
 {
@@ -79,11 +75,11 @@ namespace WpfShips
                 gameState = GameState.PLAYING;
             }
         }
-        
+
         public void RandomShip(int n)
         {
             ButtonCondition[] checkArray = new ButtonCondition[n];
-            int iterator =0;
+            int iterator = 0;
             int x = rnd.Next(0, 8);
             int y = rnd.Next(0, 8);
             int XorY = rnd.Next(1, 3);
@@ -91,7 +87,7 @@ namespace WpfShips
             {
                 RandomShip(n);
             }
-            else if(n==1)
+            else if (n == 1)
             {
                 computerBoardCondition[y, x].TypeOfShip = 1;
                 computerBoardCondition[y, x].Occupied = true;
@@ -100,7 +96,7 @@ namespace WpfShips
             {
                 checkArray[iterator] = computerBoardCondition[y, x];
                 iterator++;
-                if (XorY == 1 && x>0 && x<7 && (computerBoardCondition[y,x+1].Occupied==false || computerBoardCondition[y, x - 1].Occupied == false))
+                if (XorY == 1 && x > 0 && x < 7 && (computerBoardCondition[y, x + 1].Occupied == false || computerBoardCondition[y, x - 1].Occupied == false))
                 {
                     int left = x;
                     int right = x;
@@ -109,10 +105,10 @@ namespace WpfShips
                         if (right < 7 && computerBoardCondition[y, x + 1].Occupied == false)
                         {
                             right++;
-                            checkArray[iterator]=computerBoardCondition[y, right];
+                            checkArray[iterator] = computerBoardCondition[y, right];
                             iterator++;
                         }
-                        else if(left>0 && computerBoardCondition[y, x - 1].Occupied == false)
+                        else if (left > 0 && computerBoardCondition[y, x - 1].Occupied == false)
                         {
                             left--;
                             checkArray[iterator] = computerBoardCondition[y, left];
@@ -125,19 +121,19 @@ namespace WpfShips
 
                     }
                 }
-                else if (XorY == 2 &&y<7&&y>0 && (computerBoardCondition[y+1, x].Occupied == false || computerBoardCondition[y-1, x ].Occupied == false))
+                else if (XorY == 2 && y < 7 && y > 0 && (computerBoardCondition[y + 1, x].Occupied == false || computerBoardCondition[y - 1, x].Occupied == false))
                 {
                     int up = y;
                     int down = y;
                     while (iterator < n)
                     {
-                        if (down < 7 && computerBoardCondition[y+1,x].Occupied==false)
+                        if (down < 7 && computerBoardCondition[y + 1, x].Occupied == false)
                         {
                             down++;
-                            checkArray[iterator]=computerBoardCondition[down, x];
+                            checkArray[iterator] = computerBoardCondition[down, x];
                             iterator++;
                         }
-                        else if (up>0 && computerBoardCondition[y - 1, x].Occupied == false)
+                        else if (up > 0 && computerBoardCondition[y - 1, x].Occupied == false)
                         {
                             up--;
                             checkArray[iterator] = computerBoardCondition[up, x];
@@ -154,7 +150,7 @@ namespace WpfShips
                     RandomShip(n);
                 }
             }
-            if(iterator==n && n!=1)
+            if (iterator == n && n != 1)
             {
                 for (int i = 0; i < n; i++)
                 {
@@ -169,12 +165,13 @@ namespace WpfShips
         {
 
             computerBoardCondition[coords.y, coords.x].Hit = true;
+        
             IsGameOver(computerBoardCondition);
-           if (computerBoardCondition[coords.y, coords.x].Occupied==true)
+            if (computerBoardCondition[coords.y, coords.x].Occupied == true)
                 return true;
-            else 
+            else
                 return false;
-            
+
 
             // Check if game is over
             // Update game summary
@@ -182,21 +179,23 @@ namespace WpfShips
 
         internal void ComputerShoot()
         {
-            
+
             int x = rnd.Next(0, 8);
             int y = rnd.Next(0, 8);
-            if (playerBoardCondition[y,x].Hit == true)
+            if (playerBoardCondition[y, x].Hit == true)
             {
                 ComputerShoot();
             }
-            else if(playerBoardCondition[y, x].Occupied == true)
+            else if (playerBoardCondition[y, x].Occupied == true)
             {
-                playerBoardCondition[y,x].Hit = true;
+                playerBoardCondition[y, x].Hit = true;
                 ComputerShoot();
+                Console.WriteLine($"Computer attacked x: {x}, y: {y}");
             }
             else
             {
                 playerBoardCondition[y, x].Hit = true;
+                Console.WriteLine($"Computer attacked x: {x}, y: {y}");
             }
             // todo implement me
         }
@@ -211,9 +210,9 @@ namespace WpfShips
 
         private void IsGameOver(ButtonCondition[,] Array)
         {
-            for(int i = 0; i < 8; i++)
+            for (int i = 0; i < 8; i++)
             {
-                for(int j = 0; j < 8; j++)
+                for (int j = 0; j < 8; j++)
                 {
                     if (Array[i, j].Occupied == true && Array[i, j].Hit == false)
                         return;
@@ -238,7 +237,8 @@ namespace WpfShips
         }
     }
 
-    public enum GameState {
+    public enum GameState
+    {
         PICKING, PLAYING, GAMEOVER
     }
 

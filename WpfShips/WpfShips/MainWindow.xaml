@@ -174,5 +174,6 @@
         <TextBlock HorizontalAlignment="Left" Height="16" Margin="194,451,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="16" Grid.Column="1"/>
         <TextBlock HorizontalAlignment="Left" Height="16" Margin="194,472,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="16" Grid.Column="1"/>
         <Button Content="Restart" HorizontalAlignment="Left" Height="26" Margin="31,29,0,0" VerticalAlignment="Top" Width="57" Click="ClickButtonRestart"/>
+        <Label x:Name="txtstate" Content="Picking" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="42" Margin="418,0,0,0" VerticalAlignment="Top" Width="169" HorizontalContentAlignment="Center" FontWeight="Bold" BorderBrush="#FFFF0404" BorderThickness="2,2,2,2" FontSize="22"/>
     </Grid>
 </Window>

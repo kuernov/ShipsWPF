@@ -1,18 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Diagnostics;
 
 namespace WpfShips
 {
@@ -20,15 +9,15 @@ namespace WpfShips
     /// Logika interakcji dla klasy MainWindow.xaml
     /// </summary>
     /// 
- 
+
     public partial class MainWindow : Window
     {
         Game game;
-       
+
         Button[,] playerPositionButtons;
         Button[,] computerPositionButtons;
-        SolidColorBrush[] foregroundByShipSize = new SolidColorBrush[] { Brushes.Black, Brushes.Purple, Brushes.Red, Brushes.Green, Brushes.Orange }; 
-        
+        SolidColorBrush[] foregroundByShipSize = new SolidColorBrush[] { Brushes.Black, Brushes.Lime, Brushes.Red, Brushes.Aqua, Brushes.Orange };
+
         public MainWindow()
         {
             InitializeComponent();
@@ -57,11 +46,12 @@ namespace WpfShips
 
                 }
             }
+            TxtLabel(game.gameState);
         }
 
         private void RenderPlayerButton(Button button, ButtonCondition condition, GameState gameState)
         {
-            button.IsEnabled = true;
+            button.IsEnabled = gameState == GameState.PICKING;
             button.Tag = null;
             button.BorderBrush = GetBorderBrush(condition);
             button.Foreground = foregroundByShipSize[condition.TypeOfShip];
@@ -91,50 +81,72 @@ namespace WpfShips
 
         private void playerLocationPicker(object sender, EventArgs e)
         {
-            Button button = (Button) sender;
+            Button button = (Button)sender;
             var coords = ButtonToCoords(button);
             if (game.gameState == GameState.PICKING)
             {
                 game.Pick(coords);
-            } 
+            }
 
             renderGame();
         }
         private void HandlePlayerShoot(object sender, EventArgs e)
-        {
+        {  
             Button button = (Button)sender;
             var coords = ButtonToCoords(button);
-            if (game.gameState == GameState.PLAYING && game.PlayerShoot(coords)==true )
+            if (game.gameState == GameState.PLAYING && game.PlayerShoot(coords) == true)
             {
                 game.PlayerShoot(coords);
+                Console.WriteLine($"Player attacked x: {coords.x}, y: {coords.y}");
             }
             else if (game.gameState == GameState.PLAYING)
             {
                 game.PlayerShoot(coords);
+                Console.WriteLine($"Player attacked x: {coords.x}, y: {coords.y}");
                 game.ComputerShoot();
             }
             renderGame();
-        }
-
-        private void HandleShoot(Coords coords)
-        {
-            game.PlayerShoot(coords);
-            game.ComputerShoot();
-
+            GameOverEvent(game.gameState);
         }
 
         private Coords ButtonToCoords(Button button)
         {
-            var buttonCoordinates = (string )button.Content;
+            var buttonCoordinates = (string)button.Content;
             int x = buttonCoordinates[0] - 'A';
             int y = buttonCoordinates[1] - '1';
             Console.WriteLine($"Detected button click at x: {x}, y: {y}");
 
             return new Coords(x, y);
         }
-        private void GameOverEvent()
+        private void GameOverEvent(GameState gameState)
         {
+            if(gameState == GameState.GAMEOVER)
+            {
+                if(MessageBox.Show("Game Over. Do you want to play again?","Ship Battle",MessageBoxButton.YesNo)==MessageBoxResult.Yes)
+                {
+                    RestartGame();
+                }
+                else
+                {
+                    Close();
+                }
+            }
+        }
 
+        public void TxtLabel(GameState gameState)
+        {
+            if (gameState == GameState.PICKING)
+            {
+                txtstate.Content = "PICKING";
+            }
+            else if (gameState==GameState.PLAYING)
+            {
+                txtstate.Content = "PLAYING";
+            }
+            else
+            {
+                txtstate.Content = "GAME OVER";
+            }
         }
 
         private void ClickButtonRestart(object sender, RoutedEventArgs e)
